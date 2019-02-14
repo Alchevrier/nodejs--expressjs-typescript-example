@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-express-ts-tutorial",
+  "version": "1.0.0",
+  "description": "This aims to display how to create a REST API using NodeJS, ExpressJS and Typescript",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/start",
+    "test": "tsc && mocha dist/**/*.spec.js",
+    "test-coverage": "tsc && istanbul cover _mocha $(find ./dist -name \"*.spec.js\" -not -path \"./node_modules/*\")"
+  },
+  "author": "alex.chevrier",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^11.9.3",
+    "express": "^4.16.4",
+    "typescript": "^3.3.3",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/sinon": "^7.0.6",
+    "chai": "^4.2.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "sinon": "^7.2.3"
+  }
+}
