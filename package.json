@@ -7,7 +7,7 @@
     "start": "node ./bin/start",
     "build": "tsc",
     "test": "npm run build && mocha dist/**/*.spec.js",
-    "test-coverage": "npm run build && istanbul cover _mocha $(find ./dist -name \"*.spec.js\" -not -path \"./node_modules/*\")"
+    "test-coverage": "npm run build && nyc npm test"
   },
   "author": "alex.chevrier",
   "license": "ISC",
