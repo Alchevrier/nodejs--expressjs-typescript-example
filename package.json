@@ -4,7 +4,7 @@
   "description": "This aims to display how to create a REST API using NodeJS, ExpressJS and Typescript",
   "main": "index.js",
   "scripts": {
-    "start": "node ./bin/start",
+    "start": "npm run build && node ./dist/index.js",
     "build": "tsc",
     "test": "npm run build && mocha dist/**/*.spec.js",
     "test-coverage": "npm run build && nyc npm test"
