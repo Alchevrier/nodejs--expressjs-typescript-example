@@ -18,13 +18,13 @@
     "@types/sinon": "^7.0.6",
     "express": "^4.16.4",
     "typescript": "^3.3.3",
-    "winston": "^3.2.1"
-  },
-  "devDependencies": {
+    "winston": "^3.2.1",
     "chai": "^4.2.0",
-    "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
     "sinon": "^7.2.3",
     "supertest": "^3.4.2"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5"
   }
 }
