@@ -2,7 +2,7 @@
   "name": "nodejs-express-ts-tutorial",
   "version": "1.0.0",
   "description": "This aims to display how to create a REST API using NodeJS, ExpressJS and Typescript",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "start": "npm run build && node ./dist/index.js",
     "build": "tsc",
