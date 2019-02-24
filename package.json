@@ -13,14 +13,14 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^11.9.3",
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/sinon": "^7.0.6",
     "express": "^4.16.4",
     "typescript": "^3.3.3",
     "winston": "^3.2.1"
   },
   "devDependencies": {
-    "@types/chai": "^4.1.7",
-    "@types/mocha": "^5.2.6",
-    "@types/sinon": "^7.0.6",
     "chai": "^4.2.0",
     "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
