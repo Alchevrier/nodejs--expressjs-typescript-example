@@ -11,6 +11,6 @@ export class TodoPutter {
     }
 
     public async addTodo(title: string, description: string): Promise<boolean> {
-        return this.datastore.put({id: uuid(), title, description});
+        return await this.datastore.put({id: uuid(), title, description});
     }
 }
