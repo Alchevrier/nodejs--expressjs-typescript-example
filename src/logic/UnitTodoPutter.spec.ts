@@ -5,7 +5,7 @@ import { Datastore } from "../database/Datastore";
 import { ITodo } from "./model";
 import { TodoPutter } from "./TodoPutter";
 
-describe("Unit testing the database layer", () => {
+describe("Unit testing the TodoPutter class", () => {
 
     let todoPutter: TodoPutter;
     let database: Datastore<ITodo>;
