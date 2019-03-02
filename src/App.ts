@@ -5,7 +5,7 @@ import { TodoPutter } from "./logic/TodoPutter";
 import { TodoRetriever } from "./logic/TodoRetriever";
 import { MessageProvider } from "./MessageProvider";
 
-class App {
+export class App {
 
     public express;
     public todoRetriever: TodoRetriever;
@@ -38,7 +38,11 @@ class App {
 
         router.get("/todo/:id", (request, response) => {
             this.todoRetriever.retrieve(request.params.id).then((todo: ITodo) => {
-                response.json(todo);
+                if (todo === undefined) {
+                    response.sendStatus(404);
+                } else {
+                    response.json(todo);
+                }
             });
         });
 

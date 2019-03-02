@@ -11,6 +11,10 @@ describe("Integration testing the database layer", () => {
         datastore = new Datastore<IDocument>("test.json", "test");
     });
 
+    afterEach(() => {
+        datastore = null;
+    });
+
     it("Should return true if insert was succesful", async () => {
         const isSuccessful = await datastore.put({ id: ""});
         expect(isSuccessful).to.be.equal(true);
