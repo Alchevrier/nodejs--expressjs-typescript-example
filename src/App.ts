@@ -1,5 +1,4 @@
 import * as express from "express";
-import { Datastore } from "./database/Datastore";
 import { ITodo } from "./logic/model";
 import { TodoPutter } from "./logic/TodoPutter";
 import { TodoRetriever } from "./logic/TodoRetriever";
@@ -60,9 +59,3 @@ export class App {
         this.express.use("/", router);
     }
 }
-
-const datastore = new Datastore<ITodo>("todoDb", "todos");
-
-export default new App(
-    new TodoRetriever(datastore),
-    new TodoPutter(datastore)).express;
