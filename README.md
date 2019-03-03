@@ -7,11 +7,10 @@ Welcome to this test project. This project aims to display:
 
 # Available endpoints
 
-GET / -> Returns the constant JSON { "message": "Hello World!" }
-
-GET /todos -> Gets all persisted TODOS
-GET /todo/:id -> Gets the TODO with the provided id
-POST /todo (body: { title: "<ATitle>", "description": "<ADescription>"}) -> Persists the todo
+GET / -> Returns the constant JSON { "message": "Hello World!" }  
+GET /todos -> Gets all persisted TODOS  
+GET /todo/:id -> Gets the TODO with the provided id  
+POST /todo (body: { title: "<ATitle>", "description": "<ADescription>"}) -> Persists the todo 
 
 # Running coverage
 
